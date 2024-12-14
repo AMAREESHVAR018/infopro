@@ -9,21 +9,23 @@
 <body>
     <div class="game-container">
         <h1>Tic-Tac-Toe</h1>
-        <div id="game-board" class="board">
-            <!-- Cells for the board -->
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
+        <div class="mode-selection">
+            <button id="twoPlayerBtn">Two Player</button>
+            <button id="playAIButton">Play with AI</button>
         </div>
-        <div id="game-status" class="status">Player X's Turn</div>
-        <button id="reset-button" class="reset">Reset Game</button>
+        <div class="game-board" id="gameBoard">
+            <!-- Cells dynamically created by JavaScript -->
+        </div>
+        <div class="controls">
+            <p class="status" id="status"></p>
+            <button id="restartButton">Restart</button>
+        </div>
     </div>
+    <div class="winning-message" id="winningMessage">
+        <div class="trophy"></div>
+
+    </div>
+
     <script src="task3.js"></script>
 </body>
 </html>
